@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+/* body {
+  background: hsl(221, 100%, 96%);
+} */
+
+.total-score {
+  background: hsl(252, 100%, 67%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: 0px 30px 60px rgba(61, 108, 236, 0.15);
+  border-radius: 0px 0px 32px 32px;
+  width: 375px;
+  height: 356px;
+}
+h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  color: #cac9ff;
+}
+.circle {
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  text-align: center;
+  margin-left: 118px;
+}
+.boldtype {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 56px;
+  line-height: 72px;
+  padding-top: 25px;
+}
+.total {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  mix-blend-mode: normal;
+  opacity: 0.52;
+}
+.descrpt {
+  width: 260px;
+  height: 81px;
+  margin: 100px;
+}
+.descrpt h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  text-align: center;
+  padding: 8px;
+}
+
+.descrpt p {
+  font-size: 16px;
+  text-align: center;
+  font-weight: 500;
+  width: 260px;
+  height: 42px;
+  margin-left: 58px;
+  color: #cac9ff;
+  line-height: 21px;
+}
+
+.summary-score {
+  /* top right bottom left */
+  margin: 0px 30px 24px 30px;
+}
+
+h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: #303b59;
+  padding: 24px 0px;
+}
+.summary-score div {
+  width: 315px;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+img {
+  margin-right: 9px;
+}
+.red {
+  padding: 15px;
+  color: #ff5555;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95),
+      rgba(255, 255, 255, 0.95)
+    ),
+    #ff5555;
+}
+.yellow {
+  padding: 15px;
+  color: #ffb21e;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95),
+      rgba(255, 255, 255, 0.95)
+    ),
+    #ffb21e;
+}
+.green {
+  padding: 15px;
+  color: #00bb8f;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95),
+      rgba(255, 255, 255, 0.95)
+    ),
+    #00bb8f;
+}
+.blue {
+  padding: 15px;
+  color: #1125d6;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95),
+      rgba(255, 255, 255, 0.95)
+    ),
+    #1125d6;
+}
+.dark-navy-1 {
+  color: #303b59;
+  opacity: 1;
+}
+.dark-navy {
+  color: #303b59;
+  opacity: 0.75;
+}
+button {
+  background: #303b59;
+  color: hsl(221, 100%, 96%);
+  width: 315px;
+  height: 56px;
+  border-radius: 128px;
+  border: none;
+  margin-top: 24px;
+}
+button:hover {
+  background: hsl(252, 100%, 67%);
+  border: none;
+}
+/* mobile 390 - 844 */
+[class*="col-"] {
+  width: 100%;
+}
+/* tablets */
+@media only screen and (min-width: 600px) {
+  body {
+    background: hsl(221, 100%, 96%);
+  }
+  .row {
+    position: absolute;
+    width: 736px;
+    height: 512px;
+    left: 50px;
+  }
+  .circle {
+    width: 200px;
+    height: 200px;
+    margin-left: 84px;
+  }
+  .boldtype {
+    padding: 55px;
+    font-size: 72px;
+    font-weight: 800;
+  }
+  h2 {
+    font-size: 32px;
+    margin-top: 35px;
+    padding-top: 28px;
+    padding-bottom: 14px;
+  }
+  .descrpt p {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .total-score {
+    background: linear-gradient(
+      180deg,
+      #7755ff 0%,
+      #6943ff 0.01%,
+      #2f2ce9 100%
+    );
+    border-radius: 32px;
+  }
+  .summary-score {
+    background: white;
+    border-radius: 32px;
+  }
+  h3,
+  .red,
+  .yellow,
+  .green,
+  .blue,
+  button {
+    margin-left: 370px;
+  }
+
+  .col-1 {
+    position: absolute;
+    width: 368px;
+    height: 512px;
+    left: 352px;
+    top: 284px;
+    z-index: 9;
+  }
+  .col-2 {
+    position: absolute;
+    width: 736px;
+    height: 512px;
+    left: 352px;
+    top: 284px;
+  }
+}
+/* desktop
+@media only screen and (min-width: 768px) {
+  body {
+    background: hsl(221, 100%, 96%);
+  }
+  .summary-score {
+    background: white;
+  }
+  .row {
+    display: flex;
+  }
+
+  .col-1 {
+    width: 50%;
+  }
+  .col-2 {
+    width: 50%;
+  }
+} */
